@@ -9,7 +9,7 @@ import json
 
 import game
 
-filePath = 'res/games.json'
+filePath = "res/games.json"
 
 def readGamesFile():
     with open(filePath) as gameFile:
