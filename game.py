@@ -5,7 +5,6 @@ Author:         Jonathan Delgado
 Description:    Module defining game object for accessing game information
 ====================================
 """
-
 class Game:
     def __init__(self, name, platform="not owned", multiplayer=False):
         self.name           = name
@@ -27,6 +26,7 @@ def JSON_to_Game(gameName: str, gameInfo: dict):
         Helper constructor to convert dictionaries to Game objects
     
         Args:
+            gameName (str): the name of the game
             gameInfo (dict): the dictionary to be converted
     
         Returns:
