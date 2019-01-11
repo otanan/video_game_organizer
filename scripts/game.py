@@ -6,7 +6,7 @@ Description:    Module defining game object for accessing game information
 ====================================
 """
 class Game:
-    def __init__(self, name="", platform="not owned", multiplayer=False):
+    def __init__(self, name="", platform=["not owned"], multiplayer="false"):
         self.name           = name
         self.platform       = platform
         self.multiplayer    = multiplayer
