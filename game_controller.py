@@ -17,22 +17,19 @@ def readGamesFile():
         gamesListAsJSON = json.load(gameFile)
 
     #Converts the JSON list to Game objects
-    gamesList = list()
+    gamesList = {}
     for gameName in gamesListAsJSON:
         #Gets the game info dictionary and converts it back to the object
-        gamesList.append(game.JSON_to_Game(gameName, gamesListAsJSON[gameName]))
+        gamesList[gameName] = game.JSON_to_Game(gameName, gamesListAsJSON[gameName])
 
     return gamesList
-
-def appendGameToList(game: game.Game, gamesList: dict):
-        gamesList[game.getName()] = game.getInfo()
 
 def saveGamesFile(gamesList):
     #Converts the list of Game objects back into a large dictionary
     #for storing as JSON
     gamesListAsJSON = {}
-    for game in gamesList:
-        gamesListAsJSON[game.getName()] = game.getInfo()
+    for gameName in gamesList:
+        gamesListAsJSON[gameName] = gamesList[gameName].getInfo()
 
     #Writes the updated JSON file out
     with open(filePath, 'w') as gameFile:
@@ -46,6 +43,5 @@ if __name__ == "__main__":
     #     game.Game("Shadow of War"),
     #     game.Game("Darksiders II")
     # )
-
 
     saveGamesFile(gamesList)
