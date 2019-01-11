@@ -1,10 +1,30 @@
 {
-    "Shadow of War": {
-        "platform": "not owned",
-        "multiplayer": false
+    "Ace of Spades": {
+        "platform": "PC",
+        "multiplayer": "true"
     },
-    "Darksiders II": {
-        "platform": "not owned",
-        "multiplayer": false
+    "Age of Mythology: Extended Edition": {
+        "platform": "PC",
+        "multiplayer": "true"
+    },
+    "Alan Wake": {
+        "platform": "PC",
+        "multiplayer": "false"
+    },
+    "Alan Wake's American Nightmare": {
+        "platform": "PC",
+        "multiplayer": "true"
+    },
+    "The Amazing Spider-Man": {
+        "platform": "PC",
+        "multiplayer": "false"
+    },
+    "Arma III": {
+        "platform": "PC",
+        "multiplayer": "true"
+    },
+    "Arma Cold War Assault": {
+        "platform": "PC",
+        "multiplayer": "true"
     }
 }
